@@ -1,4 +1,4 @@
-const apiKey = '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'; // Replace with your actual Hugging Face API key
+const apiKey = 'const apiKey = 'your api key'; 
 const maxChars = 1000; // Character limit
 
 // Toggle between dark and light themes
