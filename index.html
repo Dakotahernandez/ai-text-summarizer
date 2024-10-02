@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI Text Summarizer</h2>
+        <!-- Dark Mode Toggle Switch -->
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+            <span id="theme-label">Light Mode</span>
+        </div>
+        <textarea id="input-text" placeholder="Paste your text here..." oninput="updateCharacterCount()"></textarea>
+        <div id="char-counter">0 / 1000 characters</div>
+        <button id="summarize-btn" onclick="summarizeText()" disabled>Summarize</button>
+        <div id="output" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
